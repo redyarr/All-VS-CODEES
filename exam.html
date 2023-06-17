@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <p id="par"></p>
+
+<button id="click"   onclick="run()">press me</button><br>
+<button id="click2"   onclick="change()"> change color</button><br>
+<br> <button onclick="video()">Play Video</button>
+  <div id="myVideo" style="display: none">
+  <iframe width="544" height="480" src="https://www.youtube.com/embed/E3eGwKuSPC8" 
+  title="Go-Jo - Mrs. Hollywood (Official Visualiser)" frameborder="0" allow="accelerometer; 
+  autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen
+   ></div>
+<div id="time"></div>
+
+
+
+</body>
+</html>
+
+
+
+
+<script>
+ var con=   document.getElementById("par"); 
+ var button = document.getElementById("click");
+var time=document.getElementById("time");
+var count=0;
+var vid= document.getElementById("myVideo");
+ function run(){
+    count++;
+if(count==1){
+
+con.innerHTML="<h1>  hello! </h1>";
+//button.parentNode.removeChild(button);
+document.createElement("p");
+time.innerHTML=Date("M");
+} if (count>1) {
+    
+
+
+con.innerHTML="<h1>  stop pressing! </h1>";
+con.style.color="red";
+con.style.fontSize="100px";
+document.createElement("p");
+}
+ }
+
+
+ function change(){
+con.style.color="red";
+
+ }
+
+ function video(){
+vid.style.display="block";
+     
+ }
+ 
+
+
+
+</script>

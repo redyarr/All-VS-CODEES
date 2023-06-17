@@ -1,0 +1,52 @@
+{
+	"folders": [
+		{
+			"name": "JSGames",
+			"path": "../JSGames"
+		},
+		{
+			"name": "express.js",
+			"path": "../express.js"
+		},
+		{
+			"name": "javaScript",
+			"path": "../../../Links/javaScript"
+		},
+		{
+			"name": "lal",
+			"path": "../lal"
+		},
+		{
+			"name": "codeycopy",
+			"path": "../codeycopy"
+		},
+		{
+			"name": "website",
+			"path": "../../../../../xampp/htdocs/website"
+		},
+		{
+			"name": "Buttons",
+			"path": "../folders/all the stuff that isn't on the inteface/Buttons"
+		},
+		{
+			"name": "a&r",
+			"path": "../a&r"
+		},
+		{
+			"name": "node",
+			"path": "../node"
+		},
+		{
+			"path": "../ex"
+		},
+		{
+			"path": "."
+		},
+		{
+			"path": "../../../../../xampp/htdocs"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "JSGames"
+	}
+}

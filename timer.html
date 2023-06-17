@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>timer</title>
+  <style>
+    #timer {
+      font-size: 24px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Simple Timer</h1> <span id="hours">0</span> :
+  <span id="minutes">0</span> :
+  <span id="second">0</span>
+  
+ <div id="timer">
+  <button onclick="startTimer()">Start</button>
+  <button onclick="resetTimer()">Reset</button>
+  <button onclick="pauseTimer()">Pause</button>
+</div>
+  <script>
+    let sec = document.getElementById('second');
+    let min = document.getElementById('minutes');
+    let hours = document.getElementById('hours');
+    let timerInterval;
+    let seconds= 0;
+    let minutes=59;
+    let hour=0;
+    
+
+    function startTimer() {
+      timerInterval = setInterval(incrementTimer, 1000);
+    }
+
+    function incrementTimer() {
+    seconds++;
+      if(seconds==60){
+        minutes++;
+        seconds=0;
+
+      } if(minutes==60){
+
+        hour++;
+        minutes=0;
+      }
+      sec.textContent = seconds;
+      min.textContent = minutes;
+      hours.textContent = hour;
+    }
+
+    function resetTimer() {
+      clearInterval(timerInterval);
+      seconds = 0;
+      minutes = 0;
+      hour = 0;
+      sec.textContent = seconds;
+      min.textContent = minutes;
+      hours.textContent = hour;
+    }
+
+    function pauseTimer() {
+      clearInterval(timerInterval);
+    }
+  </script>
+</body>
+</html>

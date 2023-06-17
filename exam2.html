@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+   <input type="radio" name="wether" id="summer" value="summer">
+<label for="summer">summer</label><br>
+   
+   <input type="radio" name="wether" id="winter" value="winter"><label for="winter">winter</label><br>
+  
+   <input type="radio" name="wether" id="fall" value="fall"> <label for="fall">fall</label><br>
+   
+   <input type="radio" name="wether" id="spring" value="spring"><label for="spring">spring</label><br>
+<button onclick="check()">check </button>
+
+   <h3 id="disp"> </h3>
+   <h3 id="err"style="color: red;"></h3>
+</body>
+</html>
+
+<script>
+
+var summer =document.getElementById("summer");
+
+var winter =document.getElementById("winter");
+
+var fall =document.getElementById("fall");
+
+var spring =document.getElementById("spring");
+var disp=document.getElementById("disp");
+var err=document.getElementById("err");
+
+
+function check(){
+if(summer.checked){
+disp.innerHTML="the season is "+ summer.value;
+
+}else if(winter.checked){
+disp.innerHTML="the season is "+ winter.value;
+
+
+}else if(fall.checked){
+disp.innerHTML="the season is "+ fall.value;
+}else if(spring.checked){
+disp.innerHTML="the season is "+ spring.value;}else{
+err.innerHTML="you haven't selected any weather !"
+
+}}
+</script>
